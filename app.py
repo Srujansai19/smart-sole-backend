@@ -8,6 +8,7 @@ import os
 from dotenv import load_dotenv
 from pymongo import MongoClient
 
+app = Flask(__name__)
 # --- DATABASE CONNECTION ---
 load_dotenv()
 mongo_uri = os.getenv("MONGO_URI")
